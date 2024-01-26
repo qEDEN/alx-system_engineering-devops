@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # This script displays numbers from 1 to 20 and different messages based on certain iterations using the case statement
 
 count=1

@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # This script lists the content of the current directory, displaying only the part of the name after the first dash
 
 for file in *; do

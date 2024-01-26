@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # This script displays "Best School" 10 times, but says "Hi" on the 9th iteration using a while loop and if statement
 
 count=0
