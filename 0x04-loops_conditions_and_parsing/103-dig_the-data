@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # This script groups visitors by IP and HTTP status code, and displays the data in sorted order
 
-awk '{ count[$1" "$9]++ } END { for (ipcode in count) print count[ipcode], ipcode }' apache-access.log | sort -rn
+awk '{ count[$1" "$9]++ } END { for (ipcode in count) print count[ipcode], ipcode }' apache-access.log | sort -rn |
+
+# Displaying the data
+awk '{ printf "%8d %s %s\n", $1, $2, $3 }'
